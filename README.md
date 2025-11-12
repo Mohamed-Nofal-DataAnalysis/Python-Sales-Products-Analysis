@@ -39,7 +39,7 @@ Descriptive statistics for numerical and categorical columns
 
 ## 💰 4. Derived Metrics
 
-Created new financial columns to support analysis :\
+Created new financial columns to support analysis :
 ```python
 master_df["revenue"] = master_df["quantity"] * master_df["sale_price"]
 master_df["profit"] = master_df["sale_price"] - master_df["cost_price"]
