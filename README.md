@@ -10,34 +10,3 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-📂 2. Data Loading and Merging
-
-The project uses four main datasets:
-
-sales_part1.xls and sales_part2.xls → Sales data.
-
-products.xls → Product information.
-
-suppliers.xls → Supplier details.
-
-All datasets are merged step-by-step into a unified DataFrame named master_df, which holds complete sales, product, and supplier details.
-
-🧹 3. Data Cleaning & Exploration
-
-Performed data integrity checks:
-
-Data types (dtypes)
-
-Missing values (NaN)
-
-Duplicates
-
-Descriptive statistics for numerical and categorical columns
-
-💰 4. Derived Metrics
-
-Created new financial columns to support analysis:
-
-master_df["revenue"] = master_df["quantity"] * master_df["sale_price"]
-master_df["profit"] = master_df["sale_price"] - master_df["cost_price"]
