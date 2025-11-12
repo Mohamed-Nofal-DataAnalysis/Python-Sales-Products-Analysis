@@ -23,7 +23,7 @@ All datasets are merged step-by-step into a unified DataFrame named master_df, w
 🧹 3. Data Cleaning & Exploration
 
 Performed data integrity checks:
-
+```python
 Data types (dtypes)
 
 Missing values (NaN)
