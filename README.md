@@ -15,7 +15,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-📂 2. Data Loading and Merging
+## 📂 2. Data Loading and Merging
 
 The project uses four main datasets:
 
