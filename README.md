@@ -1,21 +1,17 @@
-# 📊 Sales & Product Data Analysis Project (Python)
+📊 Sales & Product Data Analysis Project (Python)
+📌 Overview
 
-## 📌 Overview  
-This project is a **Python-based data analysis** that combines multiple datasets — sales, products, and suppliers — into a unified master dataset to generate meaningful business insights.  
-It explores **sales performance**, **product profitability**, and **supplier efficiency** through data cleaning, merging, and visualization using **Pandas**, **Seaborn**, and **Matplotlib**.
+This project is a Python-based data analysis that combines multiple datasets — sales, products, and suppliers — into a unified master dataset to generate meaningful business insights.
+It explores sales performance, product profitability, and supplier efficiency through data cleaning, merging, and visualization using Pandas, Seaborn, and Matplotlib.
 
----
-
-## ⚙️ Project Workflow
-
-### 🧩 1. Importing Libraries
-```python
+⚙️ Project Workflow
+🧩 1. Importing Libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
- 📂 2. Data Loading and Merging
+📂 2. Data Loading and Merging
 
 The project uses four main datasets:
 
@@ -38,3 +34,10 @@ Missing values (NaN)
 Duplicates
 
 Descriptive statistics for numerical and categorical columns
+
+💰 4. Derived Metrics
+
+Created new financial columns to support analysis:
+
+master_df["revenue"] = master_df["quantity"] * master_df["sale_price"]
+master_df["profit"] = master_df["sale_price"] - master_df["cost_price"]
